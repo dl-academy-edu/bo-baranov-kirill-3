@@ -1,7 +1,18 @@
 body{
-    background-color: lavender;
+    background-color: #FFFFFF;
 }
 
 .holder{
     display: none;
+}
+
+.header {
+    background-color: FFFFFF;
+}
+
+.footer {
+    background-color: #434343;
+    color: white;
+    text-decoration: none;
+    
 }

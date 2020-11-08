@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <a href="">
             <img src="../static/png/index/logo.png" alt="logo" width="100" height="52">
         </a>        
@@ -37,28 +37,28 @@
                 <li>
                     <a href="">
                         <img src="../static/png/index/apparel_kids.png" alt="apparel_kids"
-                            width="244" height="177">
+                            width="244" height="177"><br>
                         <h3>APPAREL<br>KIDS</h3>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="../static/png/index/holi_shop.png" alt="holi_shop"
-                            width="208" height="244">
+                            width="208" height="244"><br>
                         <h3>HOLIDAY<br>SHOP</h3>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="../static/png/index/toys.png" alt="toys"
-                            width="270" height="270">
+                            width="270" height="270"><br>
                         <h3>TOYS</h3>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="../static/png/index/accesories.png" alt="accesories"
-                            width="240" height="250">
+                            width="240" height="250"><br>
                         <h3>ACCESSORIES</h3>
                     </a>
                 </li>
@@ -147,7 +147,7 @@
         </article>
     </main>
     <hr>
-    <footer>
+    <footer class="footer">
         <article>
             <h3>Navigation</h3>
             <ul>
@@ -229,16 +229,24 @@
             </form>
             <ul>
                 <li>
-                    <img src="../static/svg/index/f.svg" alt="facebook" width="8" height="14">
+                    <a href="">
+                        <img src="../static/svg/index/f.svg" alt="facebook" width="8" height="14">
+                    </a>
                 </li>
                 <li>
-                    <img src="../static/svg/index/Fill.svg" alt="twitter" width="14" height="12">
+                    <a href="">
+                        <img src="../static/svg/index/Fill.svg" alt="twitter" width="14" height="12">
+                    </a>
                 </li>
                 <li>
-                    <img src="../static/svg/index/Pinterest.svg" alt="pinterest" width="16" height="16">
+                    <a href="">
+                        <img src="../static/svg/index/Pinterest.svg" alt="pinterest" width="16" height="16">
+                    </a>
                 </li>
                 <li>
-                    <img src="../static/svg/index/Instagram.svg" alt="inst" width="16" height="16">
+                    <a href="">
+                        <img src="../static/svg/index/Instagram.svg" alt="inst" width="16" height="16">
+                    </a>
                 </li>
             </ul>
         </article>
@@ -251,6 +259,36 @@
         </section>
         
     </footer>
+
+    <form action="/" method="POST">
+        <Fieldset>
+            <legend>Модальное окно</legend>
+            <label>
+                <b>Name</b><br>
+                <input name="name" type="text" placeholder="Name" size="60"><br>
+            </label>
+            <label>
+                <b>Phone</b><br>
+                <input name="phone" placeholder="Phone" type="tel" size="30"><br>
+            </label>
+            <label>
+                <b>E-mail</b><br>
+                <input name="email" placeholder="E-mail" type="email" size="30"> <br>
+            </label>
+            <label>
+                <b>Message</b><br>
+                <textarea name="message" rows="5" cols="33"></textarea> <br>
+            </label>
+            <button type="submit">
+                Submit
+              </button>
+          
+              <button type="button">
+                Close
+              </button>
+        </Fieldset>
+
+    </form>
 
 </body>
 </html>
