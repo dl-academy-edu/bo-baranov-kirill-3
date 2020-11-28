@@ -1,263 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
 
-    <header class="header">
+<body class="overlay">
+
+    <header class="header-container">
         <a href="">
-            <img src="../static/png/index/logo.png" alt="logo" width="100" height="52">
-        </a>        
+            <img class="header-logo" src="../static/png/index/logo.png" alt="logo" width="100" height="52">
+        </a>
         <nav>
-            <ul>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Catalog</a></li>
-                <li><a href="">About Us</a></li>
+            <ul class="menu-nav">
+                <li class="menu-nav-item"><a href="">Blog</a></li>
+                <li class="menu-nav-item"><a href="">Catalog</a></li>
+                <li class="menu-nav-item"><a href="">About Us</a></li>
             </ul>
         </nav>
-        <img src="../static/png/index/search.png" alt="search" width="17" height="18">
-        <a href="/contact">Contact Us</a>
+        <img class="header-search" src="../static/png/index/search.png" alt="search" width="17" height="18">
+        <a class="header-contact" href="/contact">Contact Us</a>
     </header>
-    <hr>
-    <main>        
-        <section>
-            <h1>THE OOH NOO COLLECTION</h1>
-            <p>Designed in Slovenia</p>
-            <button>Explore now</button>
-            <img src="../static/png/index/boogi.png" alt="boogi" width="635" height="461">
+    <main id="main">
+        <section class="main-container">
+            <h1 class="main-front-title">THE OOH NOO<br>COLLECTION</h1>
+            <p class="main-front-text">Designed in Slovenia</p>
+            <button class="btn-black">Explore now</button>
+            <img class="main-front-img" src="../static/png/index/boogi.png" alt="boogi" width="635" height="461">
         </section>
 
-        <section>
-            <h2>Category Products</h2>
-            <ul>
-                <li>
+        <section class="category-container">
+            <h2 class="category-title">Category Products</h2>
+            <ul class="category-list">
+                <li class="category-item">
                     <a href="">
-                        <img src="../static/png/index/apparel_kids.png" alt="apparel_kids"
+                        <img class="category-item-img" src="../static/png/index/apparel_kids.png" alt="apparel_kids"
                             width="244" height="177"><br>
-                        <h3>APPAREL<br>KIDS</h3>
+                        <h3 class="category-item-title">APPAREL<br>KIDS</h3>
                     </a>
                 </li>
-                <li>
+                <li class="category-item">
                     <a href="">
-                        <img src="../static/png/index/holi_shop.png" alt="holi_shop"
+                        <img class="category-item-img" src="../static/png/index/holi_shop.png" alt="holi_shop"
                             width="208" height="244"><br>
-                        <h3>HOLIDAY<br>SHOP</h3>
+                        <h3 class="category-item-title">HOLIDAY<br>SHOP</h3>
                     </a>
                 </li>
-                <li>
+                <li class="category-item">
                     <a href="">
-                        <img src="../static/png/index/toys.png" alt="toys"
-                            width="270" height="270"><br>
-                        <h3>TOYS</h3>
+                        <img class="category-item-img" src="../static/png/index/toys.png" alt="toys" width="270"
+                            height="270"><br>
+                        <h3 class="category-item-title">TOYS</h3>
                     </a>
                 </li>
-                <li>
+                <li class="category-item">
                     <a href="">
-                        <img src="../static/png/index/accesories.png" alt="accesories"
+                        <img class="category-item-img" src="../static/png/index/accesories.png" alt="accesories"
                             width="240" height="250"><br>
-                        <h3>ACCESSORIES</h3>
+                        <h3 class="category-item-title">ACCESSORIES</h3>
                     </a>
                 </li>
             </ul>
-            <p>
+            <p class="category-text">
                 Modern finds for the modern home. Curated goods by unique designers<br>
                 around the world from fashion to furniture for kids and adults.
             </p>
         </section>
 
-        <section>
-            <img src="../static/png/index/girl.png" alt="girl" width="480" height="559">
-            <h3>Delivery</h3>
-            <ul>
-                <li>
-                    <h4><a href="">Delivery</a></h4>
+        <section class="service-container">
+            <img class="service-img" src="../static/png/index/girl.png" alt="girl" width="480" height="559">
+            <h3 class="service-title">Delivery</h3>
+            <ul class="service-list">
+                <li class="service-item">
+                    <h4 class="service-item-title"><a href="">Delivery</a></h4>
                 </li>
-                <li>
-                    <h4><a href="">Guarantee</a></h4>
+                <li class="service-item">
+                    <h4 class="service-item-title"><a href="">Guarantee</a></h4>
                 </li>
-                <li>
-                    <h4><a href="">Credit</a></h4>
+                <li class="service-item">
+                    <h4 class="service-item-title"><a href="">Credit</a></h4>
                 </li>
             </ul>
-            <p>
+            <p class="service-text">
                 Some days i feel like i've been working on dlk my entire life and<br>
                 there are other days that i am completely shocked that four<br>
-                 years have flown by. It's simply magical.
-            </p>
-            <p>
-                What started as an outlet to deal  with the traumatic loss of my<br>
+                years have flown by. It's simply magical.<br>
+                <br>
+                What started as an outlet to deal with the traumatic loss of my<br>
                 husband, dlk has now become a truly happy place for me and i<br>
                 have you and all of the beautiful designers that we work with<br>
                 to thank!
             </p>
-            <button>LEARN MORE</button>
+            <button class="btn-black">LEARN MORE</button>
         </section>
 
-        <section>
-            <div class="holder">
-                <h4>Sponsors</h4>
-            </div>
-            <ul>
-                <li>
+        <section class="sponsor-container">
+            <h4 class="sponsor-title">Sponsors</h4>
+            <ul class="sponsor-list">
+                <li class="sponsor-item">
                     <a href="">
-                        <img src="../static/svg/index/image.svg" alt="owox" width="211" height="40">
+                        <img class="sponsor-item-img" src="../static/svg/index/image.svg" alt="owox" width="211"
+                            height="40">
                     </a>
                 </li>
-                <li>
+                <li class="sponsor-item">
                     <a href="">
-                        <img src="../static/svg/index/image-1.svg" alt="eltex" width="216" height="46">
-                    </a>                    
+                        <img class="sponsor-item-img" src="../static/svg/index/image-1.svg" alt="eltex" width="216"
+                            height="46">
+                    </a>
                 </li>
-                <li>
+                <li class="sponsor-item">
                     <a href="">
-                        <img src="../static/svg/index/image-2.svg" alt="apple" width="179" height="61">
-                    </a>                    
+                        <img class="sponsor-item-img" src="../static/svg/index/image-2.svg" alt="apple" width="179"
+                            height="61">
+                    </a>
                 </li>
-                <li>
+                <li class="sponsor-item">
                     <a href="">
-                        <img src="../static/svg/index/image-3.svg" alt="mail" width="193" height="60">
-                    </a>                    
-                </li>                
+                        <img class="sponsor-item-img" src="../static/svg/index/image-3.svg" alt="mail" width="193"
+                            height="60">
+                    </a>
+                </li>
             </ul>
         </section>
 
-        <article>
-            <h3>Design Life Kids</h3>
-            <h4>About Us</h4>
-            <p>
-                Some days i feel like i've been working on dlk my entire life and <br>
-                there are other days that i am completely shocked that four <br>
-                years have flown by. It's simply magical. 
-            </p>
-            <button>Buy now</button>
-        </article>
+        <div class="other-container">
+            <article class="design-lk">
+                <h3 class="design-lk-title">Design Life Kids</h3>
+                <h4 class="design-lk-simple-tl">About Us</h4>
+                <p class="design-lk-text">
+                    Some days i feel like i've been working on dlk my entire life and <br>
+                    there are other days that i am completely shocked that four <br>
+                    years have flown by. It's simply magical.
+                </p>
+                <button class="btn-black">Buy now</button>
+            </article>
 
-        <article>
-            <h3>Contacts</h3>
-            <p>
-                Some days i feel like i've been working on dlk my entire life and <br>
-                there are other days that i am completely shocked that four <br>
-                years have flown by. It's simply magical.
-            </p>
-            <img src="../static/png/index/image.png" alt="map" width="483" height="196">
-        </article>
+            <article class="contacts">
+                <h3 class="contacts-class">Contacts</h3>
+                <p class="contacts-text">
+                    Some days i feel like i've been working on dlk my entire life and <br>
+                    there are other days that i am completely shocked that four <br>
+                    years have flown by. It's simply magical.
+                </p>
+                <img class="contacts img" src="../static/png/index/image.png" alt="map" width="483" height="196">
+            </article>
+        </div>
     </main>
     <hr>
-    <footer class="footer">
-        <article>
-            <h3>Navigation</h3>
-            <ul>
-                <li>
+    <footer class="footer-container">
+        <div class="navigation">
+            <h3 class="navigation-title">Navigation</h3>
+            <ul class="navigation-list">
+                <li class="navigation-item">
                     <a href="">
                         <h4>About Us</h4>
                     </a>
                 </li>
-                <li>
+                <li class="navigation-item">
                     <a href="">
-                        <h4>Blog</h4>
+                        <h4 class="navigation-item-title">Blog</h4>
                     </a>
                 </li>
-                <li>
+                <li class="navigation-item">
                     <a href="">
-                        <h4>Design Services</h4>
+                        <h4 class="navigation-item-title">Design Services</h4>
                     </a>
                 </li>
-                <li>
+                <li class="navigation-item">
                     <a href="">
-                        <h4>Featured On</h4>
+                        <h4 class="navigation-item-title">Featured On</h4>
                     </a>
                 </li>
-                <li>
+                <li class="navigation-item">
                     <a href="">
-                        <h4>2018 Holiday Catalog</h4>
+                        <h4 class="navigation-item-title">2018 Holiday Catalog</h4>
                     </a>
                 </li>
-                <li>
+                <li class="navigation-item">
                     <a href="">
-                        <h4>Shop By Designer</h4>
-                    </a>
-                </li>
-            </ul>
-        </article>
-
-        <article>
-            <h3>Customer Information</h3>
-            <ul>
-                <li>
-                    <a href="">
-                        <h4>Contact Us</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h4>Sale Exclusions</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h4>Shipping & Returns</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h4>Terms & Conditions</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h4>Privacy Policy</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h4>Search</h4>
+                        <h4 class="navigation-item-title">Shop By Designer</h4>
                     </a>
                 </li>
             </ul>
-        </article>
+        </div>
 
-        <article>
-            <h3>Connect</h3>
-            <form action="/email" method="POST">
+        <div class="customer-inf">
+            <h3 class="customer-inf-title">Customer Information</h3>
+            <ul class="customer-inf-list">
+                <li class="customer-inf-item">
+                    <a href="">
+                        <h4 class="customer-inf-item-title">Contact Us</h4>
+                    </a>
+                </li>
+                <li class="customer-inf-item">
+                    <a href="">
+                        <h4 class="customer-inf-item-title">Sale Exclusions</h4>
+                    </a>
+                </li>
+                <li class="customer-inf-item">
+                    <a href="">
+                        <h4 class="customer-inf-item-title">Shipping & Returns</h4>
+                    </a>
+                </li>
+                <li class="customer-inf-item">
+                    <a href="">
+                        <h4 class="customer-inf-item-title">Terms & Conditions</h4>
+                    </a>
+                </li>
+                <li class="customer-inf-item">
+                    <a href="">
+                        <h4 class="customer-inf-item-title">Privacy Policy</h4>
+                    </a>
+                </li>
+                <li class="customer-inf-item">
+                    <a href="">
+                        <h4 class="customer-inf-item-title">Search</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="connect">
+            <h3 class="connect-title">Connect</h3>
+            <form class="connect-form" action="/email" method="POST">
                 <label for="Email">Email</label>
                 <input type="text" id="Email">
-                <button type="submit">JOIN</button>
+                <button class="btn-black" type="submit">JOIN</button>
             </form>
-            <ul>
-                <li>
+            <ul class="connect-list">
+                <li class="connect-item">
                     <a href="">
-                        <img src="../static/svg/index/f.svg" alt="facebook" width="8" height="14">
+                        <img class="connect-item-img" src="../static/svg/index/f.svg" alt="facebook" width="8"
+                            height="14">
                     </a>
                 </li>
-                <li>
+                <li class="connect-item">
                     <a href="">
-                        <img src="../static/svg/index/Fill.svg" alt="twitter" width="14" height="12">
+                        <img class="connect-item-img" src="../static/svg/index/Fill.svg" alt="twitter" width="14"
+                            height="12">
                     </a>
                 </li>
-                <li>
+                <li class="connect-item">
                     <a href="">
-                        <img src="../static/svg/index/Pinterest.svg" alt="pinterest" width="16" height="16">
+                        <img class="connect-item-img" src="../static/svg/index/Pinterest.svg" alt="pinterest" width="16"
+                            height="16">
                     </a>
                 </li>
-                <li>
+                <li class="connect-item">
                     <a href="">
-                        <img src="../static/svg/index/Instagram.svg" alt="inst" width="16" height="16">
+                        <img class="connect-item-img" src="../static/svg/index/Instagram.svg" alt="inst" width="16"
+                            height="16">
                     </a>
                 </li>
             </ul>
-        </article>
+        </div>
 
-        <section>
-            <h4>Company Rating</h4>
-            <img src="../static/png/index/Star.png" alt="rating" width="17" height="16">
-            <p>Copyright © 2018 Dlk • Design Life Kids</p>
-            <p>Web Design — Direct Line Development</p>
-        </section>
-        
+        <div class="company-rt">
+            <h4 class="company-rt-title">Company Rating</h4>
+            <img class="company-rt-img" src="../static/png/index/Star.png" alt="rating" width="17" height="16">
+            <p class="company-rt-text">Copyright © 2018 Dlk • Design Life Kids</p>
+            <p class="company-rt-text">Web Design — Direct Line Development</p>
+        </div>
+
     </footer>
 
     <form action="/" method="POST">
@@ -281,14 +294,15 @@
             </label>
             <button type="submit">
                 Submit
-              </button>
-          
-              <button type="button">
+            </button>
+
+            <button type="button">
                 Close
-              </button>
+            </button>
         </Fieldset>
 
     </form>
 
 </body>
+
 </html>

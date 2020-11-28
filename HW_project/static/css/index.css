@@ -1,18 +1,294 @@
-body{
-    background-color: #FFFFFF;
+.overlay {}
+
+.header-container {}
+
+.header-logo {}
+
+.menu-nav {}
+
+.menu-nav-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
 }
 
-.holder{
-    display: none;
+.header-search {}
+
+.header-contact {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
 }
 
-.header {
-    background-color: FFFFFF;
+.main-container {
+    background-color: #EEE4DB;
 }
 
-.footer {
+.main-front-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+}
+
+.main-front-text {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.btn-black {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 9px 22px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.btn-black:hover {
+    opacity: 0.7;
+}
+
+.main-front-img {}
+
+.category-container {}
+
+.category-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.category-list {}
+
+.category-item {}
+
+.category-item-img {}
+
+.category-item-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.category-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.service-container {}
+
+.service-img {}
+
+.service-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.service-list {}
+
+.service-item {}
+
+.service-item-title {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #1E0606;
+}
+
+.service-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.sponsor-container {}
+
+.sponsor-title {}
+
+.sponsor-list {}
+
+.sponsor-item {}
+
+.sponsor-item-img {}
+
+.other-container {}
+
+.design-lk {}
+
+.design-lk-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.design-lk-simple-tl {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    color: #1E0606;
+}
+
+.design-lk-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contacts {}
+
+.contacts-class {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.contacts-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.img {}
+
+.footer-container {
     background-color: #434343;
-    color: white;
+}
+
+.navigation {}
+
+.navigation-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+}
+
+.navigation-list {}
+
+.navigation-item {}
+
+.navigation-item-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.customer-inf {}
+
+.customer-inf-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+}
+
+.customer-inf-list {}
+
+.customer-inf-item {}
+
+.customer-inf-item-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.connect {}
+
+.connect-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+}
+
+.connect-form {}
+
+.connect-list {}
+
+.connect-item {}
+
+.connect-item-img {}
+
+.company-rt {}
+
+.company-rt-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.company-rt-img {}
+
+.company-rt-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+a {
     text-decoration: none;
-    
+}
+
+button {
+    border: none;
+    background: transparent;
 }
