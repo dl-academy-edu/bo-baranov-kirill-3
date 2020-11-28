@@ -1,4 +1,5 @@
 @import "./header.css";
+@import "./footer.css";
 
 .overlay {}
 
@@ -22,8 +23,8 @@ ul {
     max-width: 1180px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 110px;
-    padding-left: 110px;
+    padding-right: 80px;
+    padding-left: 80px;
     
 }
 
@@ -54,6 +55,7 @@ ul {
 .main {
     background-color: #EEE4DB;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 89px;
     /* min-width: 1180px; */
 }
@@ -126,8 +128,8 @@ ul {
     background-color: gray;
     width: 270px;
     height: 270px;
-    margin: 0 10px;
-    width: calc(25% - 20px);
+    /* margin: 0 10px; */
+    /* width: calc(25% - 20px); */
 }
 
 .category-item-img {
@@ -149,19 +151,37 @@ ul {
     /* position: absolute; */
 }
 
+.info-rec {
+    display: flex;
+    margin: 35px 0;
+    align-items: center;
+}
+
+.rec {
+    margin-right: 6px;
+}
+
 .category-text {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+    margin-left: 14px;
 }
 
 /* Service */
 
-.service {}
+.service {
+    display: flex;
+    margin-top: 88px;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
-.service-img {}
+.service-img {
+    margin-right: 120px;
+}
 
 .service-title {
     font-style: normal;
@@ -170,6 +190,7 @@ ul {
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
+    margin: 11px 0;
 }
 
 .service-list {}
@@ -194,11 +215,23 @@ ul {
 
 /* Sponsor */
 
-.sponsor {}
+.sponsor {
+}
 
-.sponsor-title {}
+.sponsor-title {
+    display: none;
+}
 
-.sponsor-list {}
+.sponsor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: auto;
+    margin: auto;
+    align-items: stretch;
+    margin: 90px 0;
+}
 
 .sponsor-item {}
 
@@ -206,25 +239,38 @@ ul {
 
 /* Other cont */
 
-.other {}
+.other {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
-.design-lk {}
+.design-lk {
+    background-color: #E1F0F7;
+    /* padding: -26px -30px -30px -30px; */
+    /* margin-top: -26px; */
+    padding: 30px;
+    height: 236ph;
+    width: 470px;
+}
 
 .design-lk-title {
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
-    line-height: 46px;
+    /* line-height: 46px; */
     text-transform: uppercase;
     color: #1E0606;
+    margin: auto;
 }
 
 .design-lk-simple-tl {
     font-style: italic;
     font-weight: normal;
     font-size: 26px;
-    line-height: 32px;
+    /* line-height: 32px; */
     color: #1E0606;
+    margin: 10px 0;
 }
 
 .design-lk-text {
@@ -234,7 +280,12 @@ ul {
     line-height: 22px;
 }
 
-.contacts {}
+.contacts {
+    background-color: #E1F0F7;
+    padding: 30px;
+    height: 209ph;
+    width: 470px;
+}
 
 .contacts-class {
     font-style: normal;
@@ -254,94 +305,3 @@ ul {
 
 .img {}
 
-/* Footer */
-
-.footer {
-    background-color: #434343;
-}
-
-.navigation {}
-
-.navigation-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #AAAAAA;
-}
-
-.navigation-list {}
-
-.navigation-item {}
-
-.navigation-item-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.customer-inf {}
-
-.customer-inf-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #AAAAAA;
-}
-
-.customer-inf-list {}
-
-.customer-inf-item {}
-
-.customer-inf-item-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.connect {}
-
-.connect-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #AAAAAA;
-}
-
-.connect-form {}
-
-.connect-list {}
-
-.connect-item {}
-
-.connect-item-img {}
-
-.company-rt {}
-
-.company-rt-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-}
-
-.company-rt-img {}
-
-.company-rt-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-}
