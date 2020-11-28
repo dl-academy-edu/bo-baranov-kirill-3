@@ -42,8 +42,13 @@ ul {
 }
 
 .btn-black:hover {
+    background-color: #C29974;
     opacity: 0.7;
-}
+  }
+  
+  .btn-black:active {
+    background-color: #CFAF91;
+  }
 
 /* Header */
 
@@ -121,16 +126,21 @@ ul {
 }
 
 .category-item {
-    background-color: gray;
+    background-color: #D5D4E1;
     width: 270px;
     height: 270px;
     /* display: flex;    
     justify-content: center; */
     align-items: center;
+    position: relative;
 }
 
 .category-item-img {
     max-height: 270px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .category-item-title {
@@ -143,7 +153,8 @@ ul {
     color: #FFFFFF;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
     padding-top: 25%;
-    /* position: absolute; */
+    position: relative;
+    z-index: 2;
 }
 
 .info-rec {
@@ -216,15 +227,15 @@ ul {
     display: none;
 }
 
-.sponsor-list {
+.sponsor-list {    
+    margin: 90px auto;;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    flex-grow: auto;
-    margin: auto;
+    flex-grow: auto;    
     align-items: stretch;
-    margin: 90px 0;
+    
 }
 
 .sponsor-item {}
@@ -244,16 +255,19 @@ ul {
 .design-lk {}
 
 .design-lk-wrapper {
+    margin-top: -20px;
     background-color: #E1F0F7;
     /* padding: -26px -30px -30px -30px; */
     /* margin-top: -26px; */
     padding: 30px;
     height: 236ph;
     width: 470px;
-    margin-top: -20px;
+    
 }
 
 .design-lk-title {
+    margin: auto;
+    margin-left: 26px;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
@@ -261,17 +275,17 @@ ul {
     text-transform: uppercase;
     color: #1E0606;
     /* margin-bottom: -20px; */
-    margin: auto;
-    margin-left: 26px;
+    
 }
 
 .design-lk-simple-tl {
+    margin: 10px 0;
     font-style: italic;
     font-weight: normal;
     font-size: 26px;
     /* line-height: 32px; */
     color: #1E0606;
-    margin: 10px 0;
+    
 }
 
 .design-lk-text {
@@ -288,30 +302,33 @@ ul {
 }
 
 .cont-wrapper {
+    margin-top: -20px;
     background-color: #E1F0F7;
     padding: 30px;
     height: 209ph;
     width: 470px;
-    margin-top: -20px;
+    
 }
 
 .contacts-class {
+    margin: auto;
+    margin-left: 26px;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
-    margin: auto;
-    margin-left: 26px;
+    
 }
 
 .contacts-text {
+    padding-bottom: 50px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    padding-bottom: 50px;
+    
 }
 
 .img {
