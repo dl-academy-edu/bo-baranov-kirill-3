@@ -172,15 +172,16 @@
             </article>
         </div>
     </main>
-    <hr>
+    
     <footer class="footer">
-        <div class="container">
-            <div class="navigation">
+        <div class="footer-wrap container">
+            <div class="navigation list-footer">
                 <h3 class="navigation-title">Navigation</h3>
+                <hr class="navigation-title">
                 <ul class="navigation-list">
                     <li class="navigation-item">
                         <a href="">
-                            <h4>About Us</h4>
+                            <h4 class="navigation-item-title">About Us</h4>
                         </a>
                     </li>
                     <li class="navigation-item">
@@ -209,10 +210,12 @@
                         </a>
                     </li>
                 </ul>
+                
             </div>
 
-            <div class="customer-inf">
+            <div class="customer-inf list-footer">
                 <h3 class="customer-inf-title">Customer Information</h3>
+                <hr class="customer-inf-title">
                 <ul class="customer-inf-list">
                     <li class="customer-inf-item">
                         <a href="">
@@ -247,11 +250,12 @@
                 </ul>
             </div>
 
-            <div class="connect">
+            <div class="connect list-footer">
                 <h3 class="connect-title">Connect</h3>
+                <hr class="connect-title">
                 <form class="connect-form" action="/email" method="POST">
                     <label for="Email">Email</label>
-                    <input type="text" id="Email">
+                    <input class="input-con" type="text" id="Email">
                     <button class="btn-black" type="submit">JOIN</button>
                 </form>
                 <ul class="connect-list">
@@ -281,15 +285,26 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="company-rt">
-                <h4 class="company-rt-title">Company Rating</h4>
-                <img class="company-rt-img" src="../static/png/index/Star.png" alt="rating" width="17" height="16">
-                <p class="company-rt-text">Copyright © 2018 Dlk • Design Life Kids</p>
-                <p class="company-rt-text">Web Design — Direct Line Development</p>
-            </div>
+            
+        </div>
+        <div class="company-rt container">
+            <h4 class="company-rt-title">Company Rating</h4>
+            <img class="company-rt-img" src="../static/png/index/Star.png" alt="rating" width="17" height="16">
+            <p class="company-rt-text">Copyright © 2018 Dlk • Design Life Kids</p>
+            <p class="company-rt-text">Web Design — Direct Line Development</p>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
 
     <form action="/" method="POST">
         <Fieldset>

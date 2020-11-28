@@ -124,14 +124,13 @@ ul {
     background-color: gray;
     width: 270px;
     height: 270px;
-    /* margin: 0 10px; */
-    /* width: calc(25% - 20px); */
+    /* display: flex;    
+    justify-content: center; */
+    align-items: center;
 }
 
 .category-item-img {
     max-height: 270px;
-    /* position: absolute;
-    transform: translate(15%, 0); */
 }
 
 .category-item-title {

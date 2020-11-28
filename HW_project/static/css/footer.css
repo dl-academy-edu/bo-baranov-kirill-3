@@ -4,14 +4,26 @@
     background-color: #434343;
 }
 
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
 .navigation {}
+
+.list-footer {
+    /* margin: 0 10px; */
+    /* width: calc(25% - 20px); */
+    width: 32%;
+}
 
 .navigation-title {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #AAAAAA;
+    /* color: #AAAAAA; */
+    color: #666666;
 }
 
 .navigation-list {}
@@ -88,4 +100,8 @@
     display: flex;
     align-items: center;
     color: #FFFFFF;
+}
+
+.input-con {
+    color: gray;
 }
