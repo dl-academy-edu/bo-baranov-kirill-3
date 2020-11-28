@@ -1,14 +1,1 @@
-body{
-    background-color: #FFFFFF;
-}
-
-.header {
-    background-color: FFFFFF;
-}
-
-.footer {
-    background-color: #434343;
-    color: white;
-    text-decoration: none;
-    
-}
+@import "./header.css";

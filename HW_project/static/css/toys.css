@@ -1,18 +1,1 @@
-body{
-    background-color: #FFFFFF;
-}
-
-.header {
-    background-color: FFFFFF;
-}
-
-.footer {
-    background-color: #434343;
-    color: white;
-    text-decoration: none;
-    
-}
-
-.section1 {
-    background: rgba(125, 151, 218, 0.2);
-}
+@import "./header.css";
