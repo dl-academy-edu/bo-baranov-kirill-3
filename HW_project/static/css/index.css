@@ -1,49 +1,27 @@
 .overlay {}
 
-.header-container {}
-
-.header-logo {}
-
-.menu-nav {}
-
-.menu-nav-item {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    color: #1E0606;
-    text-transform: uppercase;
+a {
+    color: #000 !important;
+    text-decoration: none;
 }
 
-.header-search {}
-
-.header-contact {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    color: #1E0606;
-    text-transform: uppercase;
+button {
+    border: none;
+    background: transparent;
 }
 
-.main-container {
-    background-color: #EEE4DB;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.main-front-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 110%;
-    color: #1E0606;
-}
-
-.main-front-text {
-    font-style: italic;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
-    color: #1E0606;
+.container {
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 110px;
+    padding-left: 110px;
 }
 
 .btn-black {
@@ -65,9 +43,87 @@
     opacity: 0.7;
 }
 
-.main-front-img {}
+/* Header */
 
-.category-container {}
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.header-logo {
+    margin-right: 25px;
+}
+
+.menu-nav {
+    display: flex;
+    
+}
+
+.menu-nav-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
+    margin-right: 20px;
+  
+}
+
+.header-search {
+    margin-left: auto;
+    margin-right: 23px;
+}
+
+.header-contact {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
+}
+
+/* Main */
+
+.main {
+    background-color: #EEE4DB;
+    display: flex;    
+}
+
+.main-text {
+    padding-top: 89px;
+    padding-left: 133px;
+}
+
+.main-front-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+    margin-bottom: 20px;
+}
+
+.main-front-text {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+    margin-bottom: 20px;
+}
+
+.main-front-img {
+    margin: -89px 100px 89px 0;
+}
+
+/* Category */
+
+.category {}
 
 .category-title {
     font-style: normal;
@@ -284,11 +340,3 @@
     color: #FFFFFF;
 }
 
-a {
-    text-decoration: none;
-}
-
-button {
-    border: none;
-    background: transparent;
-}
