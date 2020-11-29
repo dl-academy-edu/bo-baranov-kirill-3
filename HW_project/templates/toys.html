@@ -13,120 +13,175 @@
 </head>
 <body>
     <header class="header container">
-        <a href="">
+        <a href="./index.html">
             <img class="header-logo" src="../static/png/index/logo.png" alt="logo" width="100" height="52">
         </a>
         <nav>
             <ul class="menu-nav">
                 <li class="menu-nav-item"><a href="">Blog</a></li>
-                <li class="menu-nav-item"><a href="">Catalog</a></li>
+                <li class="menu-nav-item"><a href="./toys.html">Catalog</a></li>
                 <li class="menu-nav-item"><a href="">About Us</a></li>
             </ul>
         </nav>
         <img class="header-search" src="../static/png/index/search.png" alt="search" width="17" height="18">
         <a class="header-contact" href="/contact">Contact Us</a>
     </header>
-    <hr>
-    <main>        
-       <h1>Toy for kids</h1>
-       <section class="section1">
-            <form action="/" method="post">
-                <label>
-                    <b>Cost</b><br>
-                    <input name="name" type="range" min="0" max="500"><br>
-                    <pre>0               500</pre>
-                </label>
-                
-                <b>Color</b><br>
-                <label>
-                    <input name="Black" type="checkbox" value="check1">Black<br>
-                </label>
-                <label>
-                    <input name="Blue" type="checkbox" value="check2">Blue<br>
-                </label>
-                <label>
-                    <input name="Green" type="checkbox" value="check3">Green<br>
-                </label>
-                <label>
-                    <input name="White" type="checkbox" value="check4">White<br>
-                </label>
-                <br>
-                <b>Delivery</b><br>
-                <label>
-                    <input name="Delivery" type="radio" value="radio1">Free shipping<br>
-                </label>
-                <label>
-                    <input name="Delivery" type="radio" value="radio2">Fast shipping<br>
-                </label>
-                <br>
-                <b>Amount</b><br>
-                <label>
-                    <input name="Delivery" type="radio" value="Aradio1">0-5<br>
-                </label>
-                <label>
-                    <input name="Delivery" type="radio" value="Aradio2">10-20<br>
-                </label>
-                <label>
-                    <input name="Delivery" type="radio" value="Aradio2">20-50<br>
-                </label>
-                <br>
-                <button type="submit">Apply</button>
+   
+    <main >        
+        <div class="main-form">
+            <form action="#" method="get" class="main-form-block grid">
+                <span class="main-form-item">
+                    <label for="range" class="main-form-item-label">Cost</label>
+                    <span class="main-form-item-range-block">
+                        <input name="Cost" type="range" id="range" min="0" max="500" value="100" class="main-form-item-range" oninput="range_input()">
+                        <span class="main-form-item-range-numbers">
+                            <span class="main-form-item-range-min">0</span>
+                            <span class="main-form-item-range-max">500</span>
+                        </span>
+                    </span>
+                </span>
+                <div class="main-form-item">
+                    <label class="main-form-item-label">Color</label>
+                    <ul class="main-form-item-checkbox-list">
+                        <li class="main-form-item-list-unit">
+                            <input name="Black" type="checkbox" id="Black" class="main-form-item-list-unit-checkbox">
+                            <label for="Black" class="main-form-item-list-unit-label">
+                                Black
+                            </label>
+                        </li>
+                        <li class="main-form-item-list-unit">
+                            <input name="Blue" type="checkbox" id="Blue" class="main-form-item-list-unit-checkbox">
+                            <label for="Blue" class="main-form-item-list-unit-label">
+                                Blue
+                            </label>
+                        </li>
+                        <li class="main-form-item-list-unit">
+                            <input name="Green" type="checkbox" id="Green" class="main-form-item-list-unit-checkbox">
+                            <label for="Green" class="main-form-item-list-unit-label">
+                                Green
+                            </label>
+                        </li>
+                        <li class="main-form-item-list-unit">
+                            <input name="White" type="checkbox" id="White" class="main-form-item-list-unit-checkbox">
+                            <label for="White" class="main-form-item-list-unit-label">
+                                White
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-form-item">
+                    <label class="main-form-item-label">Delivery</label>
+                    <ul class="main-form-item-radio-list">
+                        <li class="main-form-item-radio-list-unit">
+                            <input name="Free-shipping" type="radio" id="Free_shipping" class="main-form-item-list-unit-radio">
+                            <label for="Free_shipping" class="main-form-item-radio-list-unit-label">
+                                Free shipping
+                            </label>
+                        </li>
+                        <li class="main-form-item-radio-list-unit">
+                            <input name="Fast-shipping" type="radio" id="Fast_shipping" class="main-form-item-list-unit-radio">
+                            <label for="Fast_shipping" class="main-form-item-radio-list-unit-label">
+                                Fast shipping
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-form-item">
+                    <label class="main-form-item-label">Amount</label>
+                    <ul class="main-form-item-radio-buttons-list">
+                        <li class="main-form-item-radio-buttons-unit">
+                            <input name="0-5" type="radio" id="0-5" class="main-form-item-radio-buttons-unit-input">
+                            <label for="0-5" class="main-form-item-radio-buttons-unit-label">
+                                0-5
+                            </label>
+                        </li>
+                        <li class="main-form-item-radio-buttons-unit">
+                            <input name="10-20" type="radio" id="10-20" class="main-form-item-radio-buttons-unit-input">
+                            <label for="10-20" class="main-form-item-radio-buttons-unit-label">
+                                10-20
+                            </label>
+                        </li>
+                        <li class="main-form-item-radio-buttons-unit">
+                            <input name="20-50" type="radio" id="20-50" class="main-form-item-radio-buttons-unit-input">
+                            <label for="20-50" class="main-form-item-radio-buttons-unit-label">
+                                20-50
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="main-form-item-button">
+                    Apply
+                </button>
             </form>
-       </section>
-       <section>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="../static/png/toys/image-5.png" alt="shark"
-                        width="380" height="385">
-                        <p>SHARKY BEAN BAG CHAIR COVER</p>
-                        <p>$60.00 USD</p>
+        </div>
+        <section class="main-products-list grid">
+            <div class="main-products-list-block">
+                <div class="main-products-list-item">
+                    <a href="#" id="learn-more" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../static/png/toys/image-4.png" alt="BRASS"        
-                        width="380" height="385">
-                        <p>BRASS DECO FRAMES</p>
-                        <p>$66.00 USD</p>
+                    <img src="../static/png/toys/image-5.png" alt="SHARKY BEAN BAG CHAIR COVER"
+                         class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">SHARKY BEAN BAG CHAIR COVER</h6>
+                    <span class="main-products-list-item-price">$60.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../static/png/toys/image-3.png" alt="CIBO"
-                        width="380" height="385">
-                        <p>CIBO FULL APRON</p>
-                        <p>$60.00 USD</p>
+                    <img src="../static/png/toys/image-4.png" alt="BRASS DECO FRAMES" class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">BRASS DECO FRAMES</h6>
+                    <span class="main-products-list-item-price">$66.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../static/png/toys/image-2.png" alt="GATCHA"
-                        width="380" height="385">
-                        <p>GATCHA GUMBALL MACHINE</p>
-                        <p>$56.00 USD</p>
+                    <img src="../static/png/toys/image-3.png" alt="CIBO FULL APRON" class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">CIBO FULL APRON</h6>
+                    <span class="main-products-list-item-price">$60.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../static/png/toys/image-1.png" alt="CHRISTMAS"
-                        width="380" height="385">
-                        <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
-                        <p>$29.00 USD</p>
+                    <img src="../static/png/toys/image-2.png" alt="GATCHA GATCHA GUMBALL MACHINE"
+                         class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">GATCHA GATCHA GUMBALL MACHINE</h6>
+                    <span class="main-products-list-item-price">$56.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../static/png/toys/image.png" alt="TANGLE"
-                        width="380" height="385">
-                        <p>TANGLE SPINNING TEA LIGHT</p>
-                        <p>$56.00 USD</p>
+                    <img src="../static/png/toys/image-1.png" alt="CHRISTMAS ADVENT SCENTED CANDLE"
+                         class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">CHRISTMAS ADVENT SCENTED CANDLE</h6>
+                    <span class="main-products-list-item-price">$29.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
                     </a>
-                </li>
-            </ul>
-       </section>
+                    <img src="../static/png/toys/image.png" alt="TANGLE SPINNING TEA LIGHT"
+                        class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">TANGLE SPINNING TEA LIGHT</h6>
+                    <span class="main-products-list-item-price">$56.00 USD</span>
+                </div>
+            </div>
+            <span class="main-pagination grid">
+                <a href="#" class="main-pagination-left-arrow"></a>
+                <span class="main-pagination-list">
+                    <a href="#" class="main-pagination-item">1</a>
+                    <a href="#" class="main-pagination-item">2</a>
+                    <a href="#" class="main-pagination-item">3</a>
+                    <a href="#" class="main-pagination-item">4</a>
+                </span>
+                <a href="#" class="main-pagination-right-arrow"></a>
+            </span>
+        </section>
     </main>
-    <hr>
+    
     <footer class="footer">
         <div class="footer-wrap container">
             <div class="navigation list-footer">
@@ -272,3 +327,104 @@
     
 </body>
 </html>
+
+
+<!-- 
+
+<h1>Toy for kids</h1>
+<section class="section1">
+     <form action="/" method="post">
+         <label>
+             <b>Cost</b><br>
+             <input name="name" type="range" min="0" max="500"><br>
+             <pre>0               500</pre>
+         </label>
+         
+         <b>Color</b><br>
+         <label>
+             <input name="Black" type="checkbox" value="check1">Black<br>
+         </label>
+         <label>
+             <input name="Blue" type="checkbox" value="check2">Blue<br>
+         </label>
+         <label>
+             <input name="Green" type="checkbox" value="check3">Green<br>
+         </label>
+         <label>
+             <input name="White" type="checkbox" value="check4">White<br>
+         </label>
+         <br>
+         <b>Delivery</b><br>
+         <label>
+             <input name="Delivery" type="radio" value="radio1">Free shipping<br>
+         </label>
+         <label>
+             <input name="Delivery" type="radio" value="radio2">Fast shipping<br>
+         </label>
+         <br>
+         <b>Amount</b><br>
+         <label>
+             <input name="Delivery" type="radio" value="Aradio1">0-5<br>
+         </label>
+         <label>
+             <input name="Delivery" type="radio" value="Aradio2">10-20<br>
+         </label>
+         <label>
+             <input name="Delivery" type="radio" value="Aradio2">20-50<br>
+         </label>
+         <br>
+         <button type="submit">Apply</button>
+     </form>
+</section>
+<section>
+     <ul>
+         <li>
+             <a href="">
+                 <img src="../static/png/toys/image-5.png" alt="shark"
+                 width="380" height="385">
+                 <p>SHARKY BEAN BAG CHAIR COVER</p>
+                 <p>$60.00 USD</p>
+             </a>
+         </li>
+         <li>
+             <a href="">
+                 <img src="../static/png/toys/image-4.png" alt="BRASS"        
+                 width="380" height="385">
+                 <p>BRASS DECO FRAMES</p>
+                 <p>$66.00 USD</p>
+             </a>
+         </li>
+         <li>
+             <a href="">
+                 <img src="../static/png/toys/image-3.png" alt="CIBO"
+                 width="380" height="385">
+                 <p>CIBO FULL APRON</p>
+                 <p>$60.00 USD</p>
+             </a>
+         </li>
+         <li>
+             <a href="">
+                 <img src="../static/png/toys/image-2.png" alt="GATCHA"
+                 width="380" height="385">
+                 <p>GATCHA GUMBALL MACHINE</p>
+                 <p>$56.00 USD</p>
+             </a>
+         </li>
+         <li>
+             <a href="">
+                 <img src="../static/png/toys/image-1.png" alt="CHRISTMAS"
+                 width="380" height="385">
+                 <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
+                 <p>$29.00 USD</p>
+             </a>
+         </li>
+         <li>
+             <a href="">
+                 <img src="../static/png/toys/image.png" alt="TANGLE"
+                 width="380" height="385">
+                 <p>TANGLE SPINNING TEA LIGHT</p>
+                 <p>$56.00 USD</p>
+             </a>
+         </li>
+     </ul>
+</section> -->
