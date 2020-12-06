@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Products</title>
+    <link rel="stylesheet" href="../static/css/toys.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header container">
+        <a href="./index.html">
+            <img class="header-logo" src="../static/png/index/logo.png" alt="logo" width="100" height="52">
+        </a>
+        <nav>
+            <ul class="menu-nav">
+                <li class="menu-nav-item"><a href="">Blog</a></li>
+                <li class="menu-nav-item"><a href="./toys.html">Catalog</a></li>
+                <li class="menu-nav-item"><a href="">About Us</a></li>
+            </ul>
+        </nav>
+        <img class="header-search" src="../static/png/index/search.png" alt="search" width="17" height="18">
+        <a class="header-contact" href="/contact">Contact Us</a>
+    </header>
+   
+    <main >        
+        <div class="main-form">
+            <form action="#" method="get" class="main-form-block grid container">
+                <span class="main-form-item">
+                    <label for="range" class="main-form-item-label">Cost</label>
+                    <span class="main-form-item-range-block">
+                        <input name="Cost" type="range" id="range" min="0" max="500" value="100" class="main-form-item-range" oninput="range_input()">
+                        <span class="main-form-item-range-numbers">
+                            <span class="main-form-item-range-min">0</span>
+                            <span class="main-form-item-range-max">500</span>
+                        </span>
+                    </span>
+                </span>
+                <div class="main-form-item">
+                    <label class="main-form-item-label">Color</label>
+                    <ul class="main-form-item-checkbox-list">
+                        <li class="main-form-item-list-unit">
+                            <input name="Black" type="checkbox" id="Black" class="main-form-item-list-unit-checkbox">
+                            <label for="Black" class="main-form-item-list-unit-label">
+                                Black
+                            </label>
+                        </li>
+                        <li class="main-form-item-list-unit">
+                            <input name="Blue" type="checkbox" id="Blue" class="main-form-item-list-unit-checkbox">
+                            <label for="Blue" class="main-form-item-list-unit-label">
+                                Blue
+                            </label>
+                        </li>
+                        <li class="main-form-item-list-unit">
+                            <input name="Green" type="checkbox" id="Green" class="main-form-item-list-unit-checkbox">
+                            <label for="Green" class="main-form-item-list-unit-label">
+                                Green
+                            </label>
+                        </li>
+                        <li class="main-form-item-list-unit">
+                            <input name="White" type="checkbox" id="White" class="main-form-item-list-unit-checkbox">
+                            <label for="White" class="main-form-item-list-unit-label">
+                                White
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-form-item">
+                    <label class="main-form-item-label">Delivery</label>
+                    <ul class="main-form-item-radio-list">
+                        <li class="main-form-item-radio-list-unit">
+                            <input name="Free-shipping" type="radio" id="Free_shipping" class="main-form-item-list-unit-radio">
+                            <label for="Free_shipping" class="main-form-item-radio-list-unit-label">
+                                Free shipping
+                            </label>
+                        </li>
+                        <li class="main-form-item-radio-list-unit">
+                            <input name="Fast-shipping" type="radio" id="Fast_shipping" class="main-form-item-list-unit-radio">
+                            <label for="Fast_shipping" class="main-form-item-radio-list-unit-label">
+                                Fast shipping
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-form-item">
+                    <label class="main-form-item-label">Amount</label>
+                    <ul class="main-form-item-radio-buttons-list">
+                        <li class="main-form-item-radio-buttons-unit">
+                            <input name="0-5" type="radio" id="0-5" class="main-form-item-radio-buttons-unit-input">
+                            <label for="0-5" class="main-form-item-radio-buttons-unit-label">
+                                0-5
+                            </label>
+                        </li>
+                        <li class="main-form-item-radio-buttons-unit">
+                            <input name="10-20" type="radio" id="10-20" class="main-form-item-radio-buttons-unit-input">
+                            <label for="10-20" class="main-form-item-radio-buttons-unit-label">
+                                10-20
+                            </label>
+                        </li>
+                        <li class="main-form-item-radio-buttons-unit">
+                            <input name="20-50" type="radio" id="20-50" class="main-form-item-radio-buttons-unit-input">
+                            <label for="20-50" class="main-form-item-radio-buttons-unit-label">
+                                20-50
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="main-form-item-button">
+                    Apply
+                </button>
+            </form>
+        </div>
+        <section class="main-products-list grid">
+            <div class="main-products-list-block">
+                <div class="main-products-list-item">
+                    <a href="#" id="learn-more" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
+                    </a>
+                    <img src="../static/png/toys/image-5.png" alt="SHARKY BEAN BAG CHAIR COVER"
+                         class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">SHARKY BEAN BAG CHAIR COVER</h6>
+                    <span class="main-products-list-item-price">$60.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
+                    </a>
+                    <img src="../static/png/toys/image-4.png" alt="BRASS DECO FRAMES" class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">BRASS DECO FRAMES</h6>
+                    <span class="main-products-list-item-price">$66.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
+                    </a>
+                    <img src="../static/png/toys/image-3.png" alt="CIBO FULL APRON" class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">CIBO FULL APRON</h6>
+                    <span class="main-products-list-item-price">$60.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
+                    </a>
+                    <img src="../static/png/toys/image-2.png" alt="GATCHA GATCHA GUMBALL MACHINE"
+                         class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">GATCHA GATCHA GUMBALL MACHINE</h6>
+                    <span class="main-products-list-item-price">$56.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
+                    </a>
+                    <img src="../static/png/toys/image-1.png" alt="CHRISTMAS ADVENT SCENTED CANDLE"
+                         class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">CHRISTMAS ADVENT SCENTED CANDLE</h6>
+                    <span class="main-products-list-item-price">$29.00 USD</span>
+                </div>
+                <div class="main-products-list-item">
+                    <a href="#" class="learn-more-box">
+                        <span class="learn-more">Learn More</span>
+                    </a>
+                    <img src="../static/png/toys/image.png" alt="TANGLE SPINNING TEA LIGHT"
+                        class="main-products-list-item-img">
+                    <h6 class="main-products-list-item-name">TANGLE SPINNING TEA LIGHT</h6>
+                    <span class="main-products-list-item-price">$56.00 USD</span>
+                </div>
+            </div>
+            <span class="main-pagination grid">
+                <a href="#" class="main-pagination-left-arrow"></a>
+                <span class="main-pagination-list">
+                    <a href="#" class="main-pagination-item">1</a>
+                    <a href="#" class="main-pagination-item">2</a>
+                    <a href="#" class="main-pagination-item">3</a>
+                    <a href="#" class="main-pagination-item">4</a>
+                </span>
+                <a href="#" class="main-pagination-right-arrow"></a>
+            </span>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-wrap container">
+            <div class="navigation list-footer">
+                <h3 class="navigation-title">Navigation</h3>
+                <hr color="#666666">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="">
+                            <span class="navigation-item-title">About Us</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="">
+                            <span class="navigation-item-title">Blog</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="">
+                            <span class="navigation-item-title">Design Services</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="">
+                            <span class="navigation-item-title">Featured On</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="">
+                            <span class="navigation-item-title">2018 Holiday Catalog</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="">
+                            <span class="navigation-item-title">Shop By Designer</span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="customer-inf list-footer">
+                <h3 class="customer-inf-title">Customer Information</h3>
+                <hr color="#666666">
+                <ul class="customer-inf-list">
+                    <li class="customer-inf-item">
+                        <a href="">
+                            <span class="customer-inf-item-title">Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="customer-inf-item">
+                        <a href="">
+                            <span class="customer-inf-item-title">Sale Exclusions</span>
+                        </a>
+                    </li>
+                    <li class="customer-inf-item">
+                        <a href="">
+                            <span class="customer-inf-item-title">Shipping & Returns</span>
+                        </a>
+                    </li>
+                    <li class="customer-inf-item">
+                        <a href="">
+                            <span class="customer-inf-item-title">Terms & Conditions</span>
+                        </a>
+                    </li>
+                    <li class="customer-inf-item">
+                        <a href="">
+                            <span class="customer-inf-item-title">Privacy Policy</span>
+                        </a>
+                    </li>
+                    <li class="customer-inf-item">
+                        <a href="">
+                            <span class="customer-inf-item-title">Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="connect list-footer">
+                <h3 class="connect-title">Connect</h3>
+                <hr color="#666666">
+                <form class="connect-form" action="/email" method="POST">                    
+                    <input class="input-con" type="text" id="Email" placeholder="Email">
+                    <div class="wrapper-btn">
+                        <button class="btn-black" type="submit">JOIN</button>
+                    </div>
+                </form>
+                <ul class="connect-list">
+                    <li class="connect-item">
+                        <a href="">
+                            <img class="connect-item-img" src="../static/svg/index/f.svg" alt="facebook" width="8"
+                                height="14">
+                        </a>
+                    </li>
+                    <li class="connect-item">
+                        <a href="">
+                            <img class="connect-item-img" src="../static/svg/index/Fill.svg" alt="twitter" width="14"
+                                height="12">
+                        </a>
+                    </li>
+                    <li class="connect-item">
+                        <a href="">
+                            <img class="connect-item-img" src="../static/svg/index/Pinterest.svg" alt="pinterest" width="16"
+                                height="16">
+                        </a>
+                    </li>
+                    <li class="connect-item">
+                        <a href="">
+                            <img class="connect-item-img" src="../static/svg/index/Instagram.svg" alt="inst" width="16"
+                                height="16">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+           
+        <div class="company-rt container">
+            <hr color="#666666">
+            <div class="company-rt-wrapper">
+                <h4 class="company-rt-title">Company Rating</h4>
+                <ul class="company-rt-img-list">
+                    <li class="company-rt-img-item">
+                        <img class="company-rt-img" src="../static/png/index/Star.png" alt="rating" width="17" height="16">
+                    </li>
+                    <li>
+                        <img class="company-rt-img" src="../static/png/index/Star.png" alt="rating" width="17" height="16">
+                    </li>
+                    <li>
+                        <img class="company-rt-img" src="../static/png/index/Star.png" alt="rating" width="17" height="16">
+                    </li>
+                    <li>
+                        <img class="company-rt-img" src="../static/png/index/Star.png" alt="rating" width="17" height="16">
+                    </li>
+                    <li>
+                        <img class="company-rt-img" src="../static/png/index/Star.png" alt="rating" width="17" height="16">
+                    </li>
+                </ul>                
+                <p class="company-rt-text">Copyright © 2018 Dlk • Design Life Kids</p>
+                <p class="company-rt-text1" color="#666666">Web Design — Direct Line Development</p>
+            </div>            
+        </div>
+    </footer>
+    
+</body>
+</html>
+

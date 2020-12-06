@@ -1,0 +1,39 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-logo {
+    margin-right: 25px;
+}
+
+.menu-nav {
+    display: flex;
+}
+
+.menu-nav-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.header-search {
+    margin-left: auto;
+    margin-right: 23px;
+}
+
+.header-contact {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    text-transform: uppercase;
+}
